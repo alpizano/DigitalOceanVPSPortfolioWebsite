@@ -1,0 +1,30 @@
+
+
+
+copying file into digital ocean VPS using gitbash (while in the alpizano.me2019 directory):
+scp index.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+
+scp contact.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+scp contactform.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+scp projects.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+scp js_calc.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+scp snake_game.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+scp student_marks.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+scp post.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+scp del_post.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+scp blog.php apizano@alpizano.me:/var/www/alpizano.me/public_html/
+
+scp assets/includes/nav.inc.php apizano@alpizano.me:/var/www/alpizano.me/public_html/assets/includes
+
+scp assets/stylesheets/main.css apizano@alpizano.me:/var/www/alpizano.me/public_html/assets/css/
+
+copying directory into VPS (while in the alpizano.me2019 directory):
+scp -r assets/images/ apizano@alpizano.me:/var/www/alpizano.me/public_html/assets/images
+
+scp -r assets/javascript/ apizano@alpizano.me:/var/www/alpizano.me/public_html/assets
+
+scp -r assets/includes apizano@alpizano.me:/var/www/alpizano.me/public_html/assets
+
+scp -r assets/css apizano@alpizano.me:/var/www/alpizano.me/public_html/assets/
+
+scp -r nbbc-1.4.5 apizano@alpizano.me:/var/www/alpizls ano.me/public_html/
