@@ -21,7 +21,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+    line-height: 1; 
 }
 
 ol, ul {
@@ -49,8 +49,16 @@ table {
 	border-spacing: 0;
 }
 
+html {
+    background: url("../imgs/4114_alpaca_regenwave.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .cover {
-    background-image: url("assets/imgs/glitch_1.png");
+    background-color:;   
     box-sizing: border-box;
     width: 100%;
     height: 100vh; 
@@ -62,16 +70,27 @@ table {
 }
 
 .headline {
+	background: rgba(33, 33, 33, 0.50);
     grid-row: 3;
     grid-column: 2 / 5;
     text-align: center;
     align-self: center;
-    align-self: end;
+	align-self: end;
+	padding: 10px 10px;
+	border-radius: 6px;
+	margin-bottom: 50px;
 }
 .subhead {
     grid-row: 4;
-    grid-column: 2 / 5;
-    text-align: center;
+    grid-column: 3 / 5;
+	text-align: center;
+
+}
+
+.social {
+	grid-row: 5;
+	grid-column: 3/5;
+	
 }
 .secondary {
     grid-column: 4 / 6;
@@ -82,8 +101,9 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	/*font-family: 'Source Sans Pro', sans-serif;*/
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 35px;
+    line-height: 1.3;
+    color: #ffffff;
 }
 
 b {
@@ -91,7 +111,7 @@ b {
 }
 
 .attent {
-	font-size: 25px;
+	font-size: 35px;
 }
 
 ul {
@@ -102,18 +122,53 @@ ul {
 	text-align:center;	
 	}
 	
-	li {
+li {
 	float: left;
-		font-family: 'Roboto', sans-serif;		
+	font-family: 'Roboto', sans-serif;		
+	
 	}
 
-  a {
-	/*text-align: center;*/
+  a {	
 	/*width: 60px;*/
 	padding: 8px 8px;
-	margin-left: 0px;
+	/*margin-left: 0px;*/
 	margin-right: 10px;
-	background-color: #000000;
+	background-color: #263238;
+	color: #FFAB91;
+	border-radius: 6px;
 	display: block;
 	text-decoration: none;
+  }
+
+  a:hover {
+	background-color: #424242;
+	color: #FAFAFA;
+  }
+
+  /* Style all font awesome icons */
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+	opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
   }
