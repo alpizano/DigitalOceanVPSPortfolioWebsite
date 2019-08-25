@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	background-color: #757575;
+	box-sizing: border-box;
+  width: 100%;
+  height: 100vh; 
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 500px 500px 1fr;
+  grid-gap: 5px; 
+  overflow-y: auto;
+  grid-template-areas: 
+  ". hero hero ."
+  ". nav nav . "
+  ". blurb blurb . "
+  ". social social . "
+  ". . . .";
+}
+
+
+.box-container {
+	background-color: pink;	
+	grid-row: 3;
+	grid-column: 2 / 5;
+	text-align: center;
+	align-self: center;
+	align-self: end;
+
+}
+
+.projects-grid {
+	background-color: red;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px; 
+	grid-template-areas: 
+	"box1 box2 box3"
+	"box4 box5 box6";
+}
+
+.box {
+	height: 400px;
+}
+
+.box1 {
+background-color: gray;
+
+}
+
+.box2 {
+background-color: yellow;
+
+}
+
+.box3 {
+background-color: rebeccapurple;
+
+}
+
+.box4 {
+background-color: orange;
+
+}
+
+.box5 {
+background-color: green;
+}
+
+.box6 {
+background-color: blue;
+}
+
+.box1 img {
+max-width: 100%;
+max-height: 100%;
+}
+
+.box2 img {
+max-width: 100%;
+max-height: 100%;
+}
+
+.box3 img {
+max-width: 100%;
+	max-height: 100%;
+}
+
+.box4 img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.box5 img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.box6 img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.row1 {
+grid-row: 0;
+grid-column: 1/6; /* must be 6 to go all the way to right */
+background-color: green;
+text-align: center;
+align-self: center;
+align-self: end;
+}
+
+.hero {
+    grid-area: hero;
+	background-color:;
+	/*grid-row: 3;*/
+	/*grid-column: 2 / 5;*/
+	text-align: center;
+	align-self: center;
+	align-self: end;
+}
+
+
+
+.hero img {
+	max-width: 40%;
+}
+.nav {
+    grid-area: nav;
+	background-color:;
+	/*grid-row: 4;*/
+	/*grid-column: 3 / 5;*/
+    text-align: center;
+    align-self: center;
+	align-self: end;
+}
+
+.social {
+    grid-area: social;
+    background-color: green;
+}
+
+.secondary {
+	grid-column: 4 / 6;
+	text-align: right;
+}
+
+.blurb {
+    grid-area: blurb;
+	/*grid-column: 1 / 2;*/
+	/*grid-row: 1/6;*/
+	/*text-align: left;*/
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-size: 20px;
+	line-height: 30px;
+}
+
+b {
+	font-weight: 500;
+}
+
+.attent {
+	font-size: 25px;
+}
+
+ul {
+	list-style-type: none;
+	/*margin: 0;*/
+	padding: 0;
+	overflow: hidden;
+	text-align:center;	
+	}
+	
+	li {
+	float: left;
+    font-family: 'Roboto', sans-serif;		
+    
+	}
+
+  a {
+	/*text-align: center;*/
+	/*width: 60px;*/
+	padding: 8px 8px;
+	margin-left: 0px;
+	margin-right: 10px;
+	background-color: ;
+	display: block;
+    text-decoration: none;
+    color: #ffffff;
+  }
