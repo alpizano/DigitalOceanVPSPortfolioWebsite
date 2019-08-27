@@ -41,40 +41,38 @@ table {
 }
 
 html {
-	background: url(../imgs/glitch_bg.jpg) no-repeat center center fixed;
+	background: url(../imgs/glitch_mobile.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
-.cover {
+.grid {
 	/*background-color:;*/
 	box-sizing: border-box;
 	width: 100%;
 	height: 100vh;
 	padding: 20px;
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr auto 1fr;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-gap: 5px;
 }
 
-
-	.layer {
+.layer {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
 }
 
-.headline {
+.power-pitch {
 	/*background: rgba(33, 33, 33, 0.30);*/
 	grid-row: 3;
-	grid-column: 2 / 5;
+	grid-column: ;
 	text-align: left;
 	align-self: center;
 	align-self: end;
@@ -83,31 +81,25 @@ html {
 	margin-bottom: 20px;
 }
 
-.subhead {
+.nav {
 	/*background-color: red;*/
 	grid-row: 4;
-	grid-column: 2 / 5;
+	grid-column: ;
 	text-align: center;
 	justify-self: center;
 	
 }
 
-.social {
-	/*background-color: gray;*/
-	font-size: 30px;
-	grid-row: 5;
-	grid-column: 2/5;
-	text-align: center;
-	justify-self: center;
+
+
+.name {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 27px;
+	font-family: 'Roboto Condensed', sans-serif;
+	}
 	
-}
-
-.secondary {
-	grid-column: 4 / 6;
-	text-align: right;
-}
-
-h1 {
+.power-pitch-description {
 	/*font-family: 'Roboto', sans-serif;*/
 	/*font-family: 'Raleway', sans-serif;*/
 	/*font-family: 'Oswald', sans-serif;*/
@@ -118,28 +110,14 @@ h1 {
 	/*font-family: 'Open Sans Condensed', sans-serif;*/
 	font-weight: 300;
 	/*font-family: 'Source Sans Pro', sans-serif;*/
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 1.3;
 	color: #FAFAFA;
 }
 
-.power-pitch {
-font-size: 45px;
-font-family: 'Roboto Condensed', sans-serif;
-
-}
-
-b {
-	font-weight: 500;
-}
-
-i {
-	font-style: italic;
-}
-
 ul {
 	list-style-type: none;
-	/*margin: 0;*/
+	margin: 0 0 20px 0;
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
@@ -149,6 +127,7 @@ li {
 	float: left;
 	font-family: 'Abel', sans-serif;
 	letter-spacing: 3px;
+	font-size: 15px;
 }
 
 li a {
@@ -169,13 +148,10 @@ li a:hover {
 	color: #FAFAFA;
 }
 
-
-.fab {
-	padding: 10px 10px;
-  width: 30px;
-  text-decoration: none;
-	border-radius: 50%;
-	margin: 0px 0px;
+.fab {	
+	text-decoration: none;	
+	margin: 0px 5px;
+	font-size: 20px;
 }
 
 .fab:hover {
@@ -183,23 +159,66 @@ li a:hover {
 	opacity: 0.5;
 }
 
-/* Facebook */
 .fa-facebook {
   /*background: #000000;*/
 	color: #B0BEC5;
 }
 
-/* Twitter */
 .fa-twitter {
 	/*background: #000000;*/
   color: #B0BEC5;
 }
 
-/* Github */
 .fa-github {
 	color: #B0BEC5;
 }
 
 .fa-linkedin-in {
 	color: #B0BEC5;
+}
+
+
+@media (min-width: 1000px) {
+
+	html {
+background: url(../imgs/glitch_bg.jpg) no-repeat center center fixed;
+	
+	}
+
+.grid {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.power-pitch {
+	grid-column: 2 / 5;
+}
+
+.nav {
+	grid-column: 2 / 5;
+	
+}
+
+
+.name {
+	font-size: 45px;
+	}
+
+.power-pitch-description {
+		font-size: 30px;
+	}
+	
+b {
+	font-weight: 500;
+}
+
+i {
+	font-style: italic;
+}
+
+.fab {	
+	font-size: 25px;
+}
+
+
 }
