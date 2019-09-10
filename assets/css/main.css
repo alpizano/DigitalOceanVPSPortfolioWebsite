@@ -62,7 +62,6 @@ table {
 	overflow-y: auto;
 }
 
-
 .box-container {
 	background-color: pink;	
 	grid-row: 3;
@@ -150,7 +149,6 @@ max-width: 100%;
 	max-height: 100%;
 }
 
-
 .row1 {
 grid-row: 0;
 grid-column: 1/6; /* must be 6 to go all the way to right */
@@ -169,11 +167,10 @@ align-self: end;
 	align-self: end;
 }
 
-
-
 .hero {
 	max-width: 40%;
 }
+
 .subhead {
 	background-color: red;
 	grid-row: 4;
@@ -216,7 +213,7 @@ ul {
 	text-align:center;	
 	}
 	
-	li {
+li {
 	float: left;
 		font-family: 'Roboto', sans-serif;		
 	}
