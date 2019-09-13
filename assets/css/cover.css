@@ -276,16 +276,31 @@ filter: ;
 
 .proj-desc {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 0;
 	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	display: block;
 	text-decoration: none;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.07rem;
 }
 
-.proj-desc:hover {
+.proj-desc-link {
+	text-align: center;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-family: 'Roboto', sans-serif;
+	color:#424242;
+	display: block;
+	text-decoration: none;
+
+}
+
+
+.proj-desc:hover, .proj-desc-link:hover {
 	color: #2962FF;
 }
 
