@@ -5,10 +5,9 @@
   <link rel="stylesheet" href="assets/css/cover.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,7 +15,9 @@
 </head>
 <body>
   <div class="overlay">
+
 <div class="outer-grid">
+
 <div class="hero">
     <div class="grid">
       <div class="power-pitch">
@@ -25,23 +26,32 @@
           I am graduating with my Bachelors of Science in Computer Engineering this fall 2019 from Purdue University -
           Northwest.
           I've completed two successful internships, one as an Applications Developer at <a
-            href="https://www.ussteel.com/">U.S. Steel</a>
-          and the other as a Software Developer at <a href="https://www1.appliedsystems.com/en-us/">Applied Systems</a>.
+            href="https://www.ussteel.com/" target="_blank">U.S. Steel</a>
+          and the other as a Software Developer at <a href="https://www1.appliedsystems.com/en-us/" target="_blank">Applied Systems</a>.
           I'm currently looking for a full-time job!
         </p>
       </div>
       <div class="nav">
-        <ul>
-          <li><a href="#projects-grid">PROJECTS</a></li>
-          <li><a href="http://github.com/alpizano">GITHUB</a></li>
+        <ul class ="menu">
+          <li><a href="#projects-grid" target="_blank">PROJECTS</a></li>
+          <li><a href="http://github.com/alpizano" target="_blank">GITHUB</a></li>
           <li><a href="resume.pdf" target="_blank" download>RESUM&Eacute;</a></li>
-          <li><a href="mailto:apizano@pnw.edu">EMAIL ME</a></li>
+          <li><a href="mailto:apizano@purdue.edu" target="_blank">EMAIL ME</a></li>
         </ul>
-        <a href="http://github.com/alpizano" class="fab fa-github"></a>
-        <a href="http://linkedin.com/in/alpizano" class="fab fa-linkedin-in"></a>
+      </div>
+      <div class="social">
+        <ul class="vert">
+          <li><a href="http://github.com/alpizano " class="fab fa-github-square" target="_blank"></a></li>
+          <li><a href="http://linkedin.com/in/alpizano" class="fab fa-linkedin" target="_blank"></a></li>
+          <li><a href="http://linkedin.com/in/alpizano" class="fab fa-twitter-square" target="_blank"></a></li>
+        </ul>
+        </div> <!-- end social-->
+      <div class="read-more">
+          <a href="#projects-grid"><p>Read more</p></a>
+        <a href="#projects-grid"><img src="assets/imgs/down-arrows.png" class="down-arrow" ></a>
       </div>
     </div> <!-- grid -->
-  </div> <!-- main -->
+  </div> <!-- hero -->
     
     <div class="content">
       
@@ -49,43 +59,55 @@
             
          <!-- <div class="content-container"> -->
               <h1></h1>
-                  <div id="projects-grid">                    
+                  <div id="projects-grid">   
+                        <div class="w3-card-4">     
                         <div class="box">
-                          <img src="assets/imgs/proj_ml_nn.jpg">
-                          <a href="" class="proj-desc">Machine Learning Neural Net to Beat Roulette - Coming Soon</a>
+                          <a href="beating_roulette.html"><img src="assets/imgs/proj_ml_nn.jpg"></a>
+                          <p class="proj-desc">Machine Learning Neural Net to Beat Roulette</p>
                           <a href="https://github.com/alpizano/Deep-Learning-Neural-Network-for-Chaotic-Systems-" class="proj-desc-link">Github Source Code</a>
-                        </div>    
+                        </div>  
+                      </div>
+                      <div class="w3-card-4">   
                         <div class="box">
-                              <img src="assets/imgs/proj_droid_sys.jpg">
-                              <a href="" class="proj-desc">Exploring Android Attack & Defense Mechanisms - Coming Soon</a>
+                            <a href="android_security.html"><img src="assets/imgs/proj_droid_sys.jpg"></a>
+                              <p class="proj-desc">Exploring Android Attack & Defense Mechanisms - Coming Soon</p>
                               <a href="https://github.com/alpizano/Exploration-of-Attack-and-Defense-Mechanisms-in-Android-Systems" class="proj-desc-link">Github Source Code</a>
-                        </div>     
+                        </div>  
+                      </div>
+                        <div class="w3-card-4">  
                        <div class="box">
-                              <img src="assets/imgs/proj_student_marks.jpg">
-                              <a href="student_marks.php" class="proj-desc">Student Grade Manager</a>
+                          <a href="student_marks.php" ><img src="assets/imgs/proj_student_marks.jpg"></a>
+                              <p class="proj-desc">Student Grade Manager</p>
                               <a href="https://github.com/alpizano/Student-Grade-Manager-GUI-ECE251" class="proj-desc-link">Github Source Code</a>
-                        </div>     
+                        </div> 
+                      </div>    
+                        <div class="w3-card-4">
                        <div class="box">
-                              <img src="assets/imgs/proj_game.jpg">
-                              <a href="snake_game.php" class="proj-desc">Snake Game</a>
+                          <a href="snake_game.php"><img src="assets/imgs/proj_game.jpg"></a>
+                              <p class="proj-desc">Snake Game</p>
                               <a href="https://github.com/alpizano/Snake-Game-JS" class="proj-desc-link">Github Source Code</a>
-                       </div>     
+                       </div>
+                      </div>     
+                       <div class="w3-card-4">
                           <div class="box">
-                                <img src="assets/imgs/proj_js_calc.jpg">
-                                <a href="js_calc.php" class="proj-desc">JavaScript Calculator</a>  
+                              <a href="js_calc.php"><img src="assets/imgs/proj_js_calc.jpg"></a>
+                                <p class="proj-desc">JavaScript Calculator</p>  
                                 <a href="https://github.com/alpizano/JavaScript-Caculator-Using-CSS-Grid" class="proj-desc-link">Github Source Code</a>   
-                          </div>     
+                          </div>   
+                        </div>  
+                          <div class="w3-card-4">
                           <div class="box">
-                                  <img src="assets/imgs/proj_scaling.jpg">
-                                  <a href="" class="proj-desc">ASI Scaling Project</a>
+                                  <a href=""><img src="assets/imgs/proj_scaling.jpg"></a>
+                                  <p class="proj-desc">ASI Scaling Project</p>
                                   <a href="https://github.com/alpizano/ScaleTraining" class="proj-desc-link">Github Source Code</a>
                           </div>
+                        </div>
                           </div> <!-- projects-grid-->
                   <!--</div>--> <!-- content-container-->
                       
                   </div> <!-- content-grid -->
     </div> <!-- content -->
-    </div> <!-- main-grid-->
+    </div> <!-- outer-grid-->
 
 
   </div> <!-- layer -->
